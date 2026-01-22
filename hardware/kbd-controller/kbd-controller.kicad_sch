@@ -2739,6 +2739,12 @@
 		(uuid "8c9d4c32-8645-49a7-8fe1-0a178af50206")
 	)
 	(junction
+		(at 130.81 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8f579fb-adab-4ae2-bf5b-e075ec701413")
+	)
+	(junction
 		(at 214.63 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2773,6 +2779,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f3fd7249-09db-496a-ae27-18dea7366f29")
+	)
+	(junction
+		(at 130.81 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffe5a64b-0796-4a8d-aee2-e8fb42129e3a")
 	)
 	(wire
 		(pts
@@ -2986,6 +2998,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 104.14) (xy 105.41 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20779e62-dfa1-4315-99c4-e69b44c10ccd")
+	)
+	(wire
+		(pts
 			(xy 214.63 90.17) (xy 214.63 87.63)
 		)
 		(stroke
@@ -3023,6 +3045,16 @@
 			(type default)
 		)
 		(uuid "2477d594-b811-490c-87a6-ee5ed1dc1e98")
+	)
+	(wire
+		(pts
+			(xy 105.41 44.45) (xy 105.41 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24c3b27f-bb95-43d3-ac99-86bd256c4d6d")
 	)
 	(wire
 		(pts
@@ -3156,6 +3188,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 104.14) (xy 130.81 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "314036be-b79e-4d41-b304-2ef04dffadda")
+	)
+	(wire
+		(pts
 			(xy 59.69 92.71) (xy 64.77 92.71)
 		)
 		(stroke
@@ -3173,6 +3215,16 @@
 			(type default)
 		)
 		(uuid "3260cedb-e71f-4b4f-a04a-565f2e696d4b")
+	)
+	(wire
+		(pts
+			(xy 105.41 38.1) (xy 130.81 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33dba80b-4e6c-470b-963e-091bd3de1e1e")
 	)
 	(wire
 		(pts
@@ -4246,6 +4298,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 38.1) (xy 105.41 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db2a61e8-5c97-4de1-a63f-607253d41695")
+	)
+	(wire
+		(pts
 			(xy 21.59 44.45) (xy 36.83 44.45)
 		)
 		(stroke
@@ -4413,6 +4475,16 @@
 			(type default)
 		)
 		(uuid "f3c6e343-def8-4488-8e61-cfca4f3685ee")
+	)
+	(wire
+		(pts
+			(xy 105.41 110.49) (xy 105.41 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f52633a4-331f-4bc5-bfa9-a2361111eceb")
 	)
 	(wire
 		(pts
@@ -6512,6 +6584,75 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 105.41 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0dcff6be-9972-4635-a3b0-38e2f8793c16")
+		(property "Reference" "C4"
+			(at 107.95 106.6862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 107.95 109.2262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+			(at 105.41 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 105.41 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "39674e60-5932-43f4-b4d1-c21e8ac3df2e")
+		)
+		(pin "1"
+			(uuid "ba26d429-6a23-4605-95d2-7f4f7ab7e0f3")
+		)
+		(instances
+			(project "kbd-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 224.79 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6853,6 +6994,72 @@
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 105.41 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5bbb062e-8cc5-4a2e-88e5-b5eda2e926ba")
+		(property "Reference" "#PWR010"
+			(at 105.41 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e897049a-1583-49d4-9ceb-e60bd424986b")
+		)
+		(instances
+			(project "kbd-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -8132,6 +8339,141 @@
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 105.41 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3045584-7ac0-47c3-a7cc-8fe2d88f4947")
+		(property "Reference" "#PWR09"
+			(at 105.41 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd13e412-a92b-41a1-841b-08d8e7bfd292")
+		)
+		(instances
+			(project "kbd-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 105.41 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd6c5a41-ac57-42ce-985b-9a4ce14991d2")
+		(property "Reference" "C5"
+			(at 107.95 40.6462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 107.95 43.1862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+			(at 105.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 105.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e218ca5b-8c21-4b00-80f0-2cb3fae8205e")
+		)
+		(pin "1"
+			(uuid "cb1a3bdf-8edb-4095-829b-bea520ac0f20")
+		)
+		(instances
+			(project "kbd-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "C5")
 					(unit 1)
 				)
 			)
