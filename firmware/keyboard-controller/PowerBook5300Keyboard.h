@@ -1,5 +1,3 @@
-#include "Keyboard.h"
-
 class PowerBook5300Keyboard {
 private:
 
@@ -58,18 +56,13 @@ private:
   const uint8_t columns[MAX_COLS]={_COL_2, _COL_3, _COL_4, _COL_5};
   const uint8_t rows[MAX_ROWS]={ROW_1, ROW_2, ROW_3, ROW_4};
 
-  const uint8_t keyMatrix[MAX_ROWS][MAX_COLS] = {
-    {KEY_ESC, KEY_NONE, KEY_F11, KEY_NONE},
-    {KEY_F2, KEY_F3, KEY_F1, KEY_F4},
-    {KEY_X, KEY_C, KEY_Z, KEY_V},
-    {KEY_S, KEY_D, KEY_A, KEY_F}
-  };
+  uint8_t keyMatrix[MAX_ROWS][MAX_COLS];
 
   uint8_t previousMatrix[MAX_COLS][MAX_ROWS] = {{1}};
   uint8_t readMatrix[MAX_COLS][MAX_ROWS] = {{1}};
 
 public:
-  PowerBook5300Keyboard() {};
+  PowerBook5300Keyboard();
   void init();
   void scan();
 };

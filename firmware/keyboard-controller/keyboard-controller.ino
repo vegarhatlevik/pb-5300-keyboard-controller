@@ -6,7 +6,6 @@ PowerBook5300Keyboard kbd;
 
 void setup() {
   kbd.init();
-  Keyboard.begin();
 }
 
 void loop() {
